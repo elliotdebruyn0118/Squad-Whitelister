@@ -1,0 +1,25 @@
+version: '3.9'
+
+name: Whitelister
+
+services:
+  app:
+    image: node:lts-hydrogen
+    restart: on-failure
+    environment:
+      MONGODB_CONNECTION_STRING: mongodb://root:toor@db/admin
+    volumes:
+      - ./:/home/whitelister/
+    working_dir: /home/whitelister/
+    command: node server.js
+    expose:
+      - "9090"
+    ports:
+      - "9090:80"
+
+  db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: toor
+    restart: unless-stopped
