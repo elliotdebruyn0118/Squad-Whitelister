@@ -8,9 +8,11 @@ This is based built on https://github.com/fantinodavide/Squad_Whitelister/releas
 # Installation
 <br>1. Use the basic installation found here for the base stuff: https://github.com/fantinodavide/Squad_Whitelister/releases
 <br>2. Edit conf.js to your needs
+<br>
 <br>3. MOST IMPORTANT PART, EDIT THESE LINES IN `SERVER.JS`:
 <br>• Line 2687-2690 (All 'replace' values) - this will be the MySQL database connection for your SquadJS server 1 database
 <br>• Line 2803-2806 (All 'replace' values) - this will be the MySQL database connection for your SquadJS server 2 database (if it's the same database as SquadJS server 1, then use the same values)
+<br>
 <br>WARNING: Make sure that your SquadJS server 2, even if on a seperate database, is using id `2` for the server ID, otherwise the bot won't be able to fetch the current map
 
 <br><br><br>
