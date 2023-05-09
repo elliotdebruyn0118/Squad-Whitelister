@@ -19,3 +19,4 @@ This is based built on https://github.com/fantinodavide/Squad_Whitelister/releas
 <br>• Added a check for current map (this is why the database connection is needed) - It checks DBLog_Matches and then gets the latest match layerClassname based on highest ID and the correct server ID
 <br>(This currently checks for if the map includes `seed` or `seeding`)
 <br>• Added a fix for losing seeding progress when above seeding threshold
+<br><img src="https://user-images.githubusercontent.com/92147251/237039025-d58b60a4-f120-43e9-9b24-a6edd733f9de.png">
